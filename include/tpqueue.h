@@ -9,7 +9,7 @@ class TPQueue {
     T data;
     Node* link;
 
-    Node(const T& val) {
+    explicit Node(const T& val) {
       data = val;
       link = nullptr;
     }
