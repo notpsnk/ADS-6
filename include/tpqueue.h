@@ -48,7 +48,7 @@ class TPQueue {
 
   T pop() {
     if (first == nullptr)
-      throw std::underflow_error("Queue is empty");
+      throw std::runtime_error("Queue is empty");
 
     Node* temp = first;
     T result = temp->data;
