@@ -35,6 +35,7 @@ class TPQueue {
 
     if (!first || item.prior > first->data.prior) {
       unit->link = first;
+      first = unit;
       return;
     }
 
